@@ -13,6 +13,12 @@
            <maven.compiler.source>1.6</maven.compiler.source>
            <maven.compiler.target>1.6</maven.compiler.target>
      </properties>
+    <repositories>
+      <repository>
+         <id>jenkins</id>
+          <url>https://repo.jenkins-ci.org/public/</url>
+        </repository>
+  </repositories>
 
       <dependencies>
            <dependency>
@@ -22,6 +28,14 @@
            </dependency>
        </dependencies>
        <!-- end::joda[] -->
+    <dependencies>
+       <dependency>
+          <groupId>org.jenkins-ci.plugins</groupId>
+          <artifactId>job-dsl-core</artifactId>
+          <version>1.76</version>
+        </dependency>
+  </dependencies>
+
        
     <build>
         <plugins>
